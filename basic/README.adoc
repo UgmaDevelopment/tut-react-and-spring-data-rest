@@ -99,7 +99,9 @@ include::src/main/resources/application.properties[]
 
 == Launching the Backend
 
-The last step needed to get a fully operational REST API off the ground is to write a `public static void main` method by using Spring Boot, as follows:
+The last step needed to get a fully operational REST API off the ground is to have a `public static void main` method that launches Spring Boot, as follows:
+
+NOTE: If you created your project with https://start.spring.io, a class with this method has been generated for you.
 
 .src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestApplication.java
 ====
@@ -109,7 +111,7 @@ include::src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestApplicat
 ----
 ====
 
-Assuming the previous class as well as your Maven build file were generated from https://start.spring.io, you can now launch it either by running that `main()` method inside your IDE or by typing `./mvnw spring-boot:run` on the command line. (`mvnw.bat` for Windows users).
+Assuming the previous class as well as your Maven build file were generated from https://start.spring.io, you can now launch the app either by running that `main()` method inside your IDE or by typing `./mvnw spring-boot:run` on the command line. (`mvnw.bat` for Windows users.)
 
 NOTE: If you are not up-to-date on Spring Boot and how it works, you should watch one of https://www.youtube.com/watch?v=sbPSjI4tt10[Josh Long's introductory presentations]. Did it? Press on!
 
