@@ -58,10 +58,10 @@ Another key piece of a Spring Data REST application is a corresponding repositor
 include::src/main/java/com/greglturnquist/payroll/EmployeeRepository.java[tag=code]
 ----
 
-<1> The repository extends Spring Data Commons' `CrudRepository` and plugs in the type of the domain object and its primary key
+<1> By extending the Spring Data Commons' `CrudRepository` we get a lot of functionality for free; we just have to plug in the type of the domain object (`Employee`) and its primary key (`Long`).
 ====
 
-That is all that is needed! In fact, you need not even annotate interface if it is top-level and visible. If you use your IDE and open up `CrudRepository`, you will find a collection of pre-defined methods.
+That is all that is needed! In fact, you need not even annotate the interface if it is top-level and visible. If you use your IDE and open up `CrudRepository`, you will find a collection of pre-defined methods.
 
 NOTE: You can define https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.definition[your own repository] if you wish. Spring Data REST supports that as well.
 
