@@ -263,7 +263,7 @@ This little plugin performs multiple steps:
 
 These steps are run in sequence, essentially installing node.js, downloading JavaScript modules, and building the JS bits.
 
-What modules are installed? JavaScript developers typically use `npm` to build up a `package.json` file, such as the following:
+What modules are installed? JavaScript developers typically use `npm` to build up a `package.json` file, such as the following; in our case, you'll create it in the root of your project. 
 
 .package.json
 ====
